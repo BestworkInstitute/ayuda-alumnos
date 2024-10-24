@@ -76,7 +76,7 @@
     <div class="container">
         <!-- Logo -->
         <img src="https://bestwork.cl/wp-content/uploads/2023/05/Logo.png" alt="Logo Bestwork">
-        
+
         <!-- Login Panel -->
         <div id="loginPanel" class="login-container">
             <h2>Iniciar Sesión</h2>
@@ -100,7 +100,7 @@
             <div id="consoleOutput"></div>
         </div>
     </div>
-    
+
     <script>
         function login() {
             const password = document.getElementById('password').value;
@@ -113,13 +113,12 @@
             }
         }
 
-        const flow = "bb848b58-c891-4aec-ac21-738a857bc778";
+        const flow = "bb848b58-c891-4aec-ac21-738a857bc778"; // Verifica que este ID sea correcto
 
         async function enviarMensaje() {
             const nombre = document.getElementById('nombre').value;
             const celular = document.getElementById('celular').value;
             const area = document.getElementById('area').value;
-
             let mensaje;
 
             // Definir el mensaje según el área seleccionada
@@ -136,7 +135,7 @@
                     break;
             }
 
-            const url = `https://flows.messagebird.com/flows/${flow}/invoke`;
+            const url = `https://flows.messagebird.com/flows/${flow}/invoke`; // Verifica que esta URL sea correcta
             const headers = {
                 CELULAR: celular,
                 NOMBRE: nombre,
